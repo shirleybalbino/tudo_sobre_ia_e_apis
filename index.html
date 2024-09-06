@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tudo sobre API e IA</title>
+</head>
+<body>
+    <header>
+        <h1>Tudo sobre API e IA</h1>
+    </header>
+    <main>
+        <section>
+            <input type="text" placeholder="Digite a sua busca" id="campo-pesquisa">
+            <button onclick="pesquisar()">Pesquisar</button>
+        </section>
+        <nav>
+            <div class="filters">
+                <button class="filter-button" data-filter="all">Todos</button>
+                <button class="filter-button" data-filter="apis">APIs</button>
+                <button class="filter-button" data-filter="inteligencia-artificial">Inteligência Artificial</button>
+                <div class="dropdown">
+                    <button class="filter-button" data-filter="outros">Outros</button>
+                    <div class="dropdown-content">
+                        <a href="#" onclick="filtrarPorCategoria('Outros Revistas e Livros')">Livros e Revistas</a>
+                        <a href="#" onclick="filtrarPorCategoria('Outros Repositório')">Repositórios</a>
+                        <a href="#" onclick="filtrarPorCategoria('Outros Ferramenta')">Ferramentas</a>
+                        <a href="#" onclick="filtrarPorCategoria('Outros Iniciativas')">Iniciativas</a>
+                    </div>                    
+                </div>
+            </div>
+        </nav>
+        <section class="resultados-pesquisa" id="resultados-pesquisa">
+            <!-- Os resultados da pesquisa serão inseridos aqui -->
+        </section>
+    </main>
+    <footer>
+        <p>2024 - Todos os direitos reservados.</p>
+        <p>Feito com ❤️ em São Paulo.</p>
+    </footer>
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

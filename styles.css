@@ -1,0 +1,271 @@
+/* Importa a fonte Chakra Petch do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;500;600;700&display=swap');
+
+header {
+    padding-top: 2rem; /* Adiciona espaçamento no topo do header */
+}
+
+/* Estiliza o corpo da página */
+body {
+    font-family: 'Inconsolata', Consolas, monospace; /* Define Inconsolata como prioridade e Consolas como fallback */
+    background-color: #1E1E2F; /* Fundo baseado no banner */
+    display: flex; /* Usa Flexbox para layout */
+    flex-direction: column; /* Alinha os itens na vertical */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    justify-content: center; /* Centraliza os itens verticalmente */
+    height: 100vh; /* Preenche a altura total da viewport */
+    margin: 0; /* Remove a margem padrão */
+    padding-top: 5rem; /* Remove o padding padrão */
+}
+
+/* Estiliza os títulos h1 */
+h1 {
+    font-size: 3rem; /* Aumenta o tamanho da fonte */
+    color: #FFFFFF; /* Cor branca para o texto */
+    text-align: center; /* Alinha o texto ao centro */
+    letter-spacing: 0.5rem; /* Aumenta o espaçamento entre letras */
+}
+h2 {
+    font-size: 1rem;
+    color: #FFFFFF;
+    text-align: center;
+    letter-spacing: 00.2rem;
+}
+
+a {
+    color: #A259FF; /* Cor do link */
+    text-decoration: underline; /* Garante que o link fique sublinhado */
+}
+
+a:hover {
+    color: #FFFFFF; /* Cor do link quando o mouse passa sobre */
+}
+
+
+/* Estiliza as seções da página */
+section {
+    display: flex; /* Usa Flexbox para layout */
+    flex-direction: column; /* Alinha os itens na vertical */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    margin-bottom: 1.5rem; /* Reduz o espaçamento abaixo de cada seção */
+}
+
+/* Estiliza os inputs dentro das seções */
+section input {
+    width: 35rem; /* Aumenta a largura dos inputs */
+    padding: 1.2rem; /* Aumenta o espaçamento interno */
+    border-radius: 3rem; /* Borda arredondada */
+    margin-bottom: 1.5rem; /* Espaçamento abaixo dos inputs */
+    border: 2px solid #A259FF; /* Cor da borda baseada no banner */
+    background-color: #282843; /* Cor de fundo dos inputs */
+    color: #FFFFFF; /* Cor do texto */
+    font-size: 1.2rem; /* Aumenta o tamanho da fonte */
+    box-sizing: border-box; /* Inclui padding e border na largura total */
+}
+
+/* Estiliza os botões dentro das seções */
+section button {
+    padding: 1rem 1.5rem; /* Aumenta o espaçamento interno do botão */
+    border: none; /* Remove a borda padrão */
+    border-radius: 2rem; /* Aumenta a borda arredondada */
+    background-color: #A259FF; /* Cor de fundo do botão baseada no banner */
+    color: #FFFFFF; /* Cor do texto do botão */
+    font-size: 1.2rem; /* Aumenta o tamanho da fonte */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+}
+
+/* Adiciona efeito hover ao botão */
+section button:hover {
+    background-color: #7A61FF; /* Muda a cor de fundo ao passar o mouse */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Adiciona uma sombra mais intensa */
+}
+
+/* Estiliza a caixa de resultados da pesquisa */
+.resultados-pesquisa {
+    width: 100%; /* Garante que a largura seja completa */
+    max-width: 60rem; /* Limita a largura máxima */
+    height: 46vh; /* Altura máxima da caixa de resultados */
+    overflow-y: auto; /* Adiciona rolagem vertical se necessário */
+    margin-top: 1rem; /* Espaçamento acima da caixa de resultados */
+    padding: 1rem; /* Espaçamento interno */
+    border-radius: 0.8rem; /* Borda mais arredondada */
+}
+
+.resultados-pesquisa p {
+    color: #FFFFFF; /* Define a cor do texto como branco */
+    font-size: 1.2rem; /* Ajusta o tamanho da fonte */
+    text-align: center; /* Centraliza o texto */
+    margin-top: 1rem; /* Adiciona espaçamento no topo */
+}
+
+
+/* Estiliza cada item de resultado */
+.item-resultado {
+    background: #282843; /* Cor de fundo dos itens baseada no banner */
+    border-radius: 0.8rem; /* Borda mais arredondada */
+    padding: 1.2rem; /* Aumenta o espaçamento interno */
+    margin-bottom: 1.2rem; /* Espaçamento abaixo dos itens */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15); /* Sombra leve */
+    color: #FFFFFF; /* Cor do texto dentro dos resultados */
+    width: 100%; /* Garante que todos tenham a mesma largura */
+    max-width: 60rem; /* Define um limite máximo de largura */
+}
+
+/* Estiliza os títulos dentro dos itens de resultado */
+.item-resultado h2 {
+    font-size: 1.8rem; /* Aumenta o tamanho da fonte */
+    color: #FFFFFF; /* Cor do texto */
+}
+
+/* Estiliza os links dentro dos itens de resultado */
+.item-resultado a {
+    text-decoration: none; /* Remove o sublinhado padrão dos links */
+    color: #A259FF; /* Cor do texto dos links baseada no banner */
+}
+
+/* Estiliza os links quando são passados o mouse sobre */
+.item-resultado a:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
+
+/* Estiliza a descrição meta dentro dos itens de resultado */
+.descricao-meta {
+    color: #FFFFFF; /* Cor do texto */
+    margin: 0.5rem 0; /* Margem acima e abaixo */
+    font-size: 1.2rem; /* Aumenta o tamanho da fonte */
+}
+
+/* Estiliza o rodapé da página */
+footer {
+    background-color: #282843; /* Cor de fundo do rodapé baseada no banner */
+    color: #FFFFFF; /* Cor do texto */
+    text-align: center; /* Alinha o texto ao centro */
+    padding: 0.5rem; /* Adiciona espaçamento interno */
+    width: 100%; /* Largura total da página */
+    position: bottom; /* Posiciona o rodapé */
+    bottom: 0; /* Alinha ao fundo da página */
+    font-size: 1.2rem; /* Aumenta o tamanho da fonte */
+}
+
+/* Estiliza os botões de filtro dentro do <nav> */
+nav .filters {
+    display: flex; /* Alinha os botões horizontalmente */
+    justify-content: center; /* Centraliza os botões */
+    gap: 1rem; /* Adiciona espaçamento entre os botões */
+    margin-top: 1rem; /* Reduz o espaçamento acima dos filtros */
+}
+
+/* Reduz o tamanho dos botões de filtro */
+nav .filter-button {
+    padding: 0.6rem 1.2rem; /* Reduz o espaçamento interno dos botões */
+    border: none; /* Remove a borda padrão */
+    border-radius: 1.5rem; /* Botões com bordas arredondadas */
+    background-color: #7A61FF; /* Cor de fundo baseada no banner */
+    color: #FFFFFF; /* Cor do texto */
+    font-size: 1rem; /* Reduz o tamanho da fonte */
+    cursor: pointer; /* Altera o cursor para "pointer" ao passar o mouse */
+    transition: background-color 0.3s ease; /* Adiciona transição suave na mudança de cor */
+}
+
+/* Estiliza o efeito hover nos botões */
+nav .filter-button:hover {
+    background-color: #A259FF; /* Cor do fundo ao passar o mouse */
+}
+
+/* Estiliza o botão ativo (selecionado) */
+nav .filter-button.active {
+    background-color: #A259FF; /* Cor de fundo do botão ativo */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Adiciona sombra ao botão ativo */
+}
+
+/* Estilo do botão dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none; /* Inicialmente oculta o dropdown */
+    position: absolute;
+    background-color: #282843; /* Cor de fundo consistente com o layout */
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Adiciona sombra */
+    z-index: 1;
+    border-radius: 0.8rem; /* Adiciona bordas arredondadas */
+    padding: 12px 16px;
+}
+
+.dropdown-content a {
+    color: #FFFFFF; /* Cor dos links */
+    padding: 12px 16px; /* Espaçamento dos links */
+    text-decoration: none; /* Remove sublinhado */
+    display: block; /* Faz os links ocuparem a largura completa */
+    border-radius: 0.8rem; /* Bordas arredondadas para os links */
+}
+
+.dropdown-content a:hover {
+    background-color: #A259FF; /* Cor de fundo dos links ao passar o mouse */
+}
+
+/* Mostra o dropdown ao passar o mouse */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem; /* Tamanho da fonte em telas menores */
+        letter-spacing: 0.3rem; /* Ajusta o espaçamento entre letras */
+    }
+
+    section input {
+        width: 25rem; /* Ajusta a largura dos inputs em telas menores */
+        padding: 1rem; /* Ajusta o espaçamento interno */
+    }
+
+    .resultados-pesquisa {
+        width: 40rem; /* Largura da caixa de resultados em telas menores */
+        height: 40vh; /* Altura da caixa de resultados em telas menores */
+    }
+
+    .item-resultado h2 {
+        font-size: 1.5rem; /* Ajusta o tamanho da fonte */
+    }
+}
+
+/* Responsividade para celulares */
+@media (max-width: 480px) {
+
+    h1 {
+        font-size: 2rem; /* Tamanho da fonte em telas pequenas */
+        letter-spacing: 0.2rem; /* Ajusta o espaçamento entre letras */
+    }
+
+    section input {
+        width: 20rem; /* Largura dos inputs em telas pequenas */
+    }
+
+    section button {
+        padding: 0.8rem 1.2rem; /* Ajusta o espaçamento interno do botão */
+        font-size: 1rem; /* Ajusta o tamanho da fonte */
+    }
+
+    .resultados-pesquisa {
+        width: 90%; /* Largura da caixa de resultados em telas pequenas */
+        height: 50vh; /* Altura da caixa de resultados em telas pequenas */
+    }
+
+    .item-resultado h2 {
+        font-size: 1.3rem; /* Ajusta o tamanho da fonte */
+    }
+
+    footer {
+        font-size: 1rem; /* Ajusta o tamanho da fonte do rodapé */
+    }
+
+    nav .filter-button {
+        padding: 0.5rem 1rem; /* Reduz o espaçamento interno dos botões em telas pequenas */
+        font-size: 0.9rem; /* Reduz o tamanho da fonte dos botões em telas pequenas */
+    }
+}
